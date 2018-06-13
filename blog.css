@@ -1,0 +1,46 @@
+.blogBody{
+	display: flex;
+	flex-wrap: nowrap;
+	color: #2f2d27;
+}
+
+.mainContent{
+	flex: 1 1 60%;
+	padding: 10px;
+	max-width: 1400px;
+}
+.portfolio{
+	padding-top:10px;
+}
+
+.sidebar{
+	padding: 1%;
+}
+.blogPost{
+	margin-top:50px;
+}
+.mobileBlog{
+	display: none;
+}
+
+@media(max-width: 1000px){
+	.mainContent{
+		display: none;
+	}
+	.mobileBlog{
+		display: block;
+		padding-top: 30px;
+	}
+	.mobileBlog img{
+		max-width: 100%
+	}
+	
+	.blogPost{
+		padding: 0 4%;
+	}
+}
+@media(max-width: 420px){
+	.logo{
+		margin-top: 20%;
+	}
+}

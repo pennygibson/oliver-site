@@ -1,0 +1,33 @@
+.fullPortfolioContent{
+	display: flex;
+	padding: 2%;
+	flex-flow: row wrap;
+}
+
+.fullPortfolioContent div{
+	flex: auto;
+	width: 300px;
+	margin: 2%;
+	
+}
+
+.fullPortfolioContent div img{
+	width: 100%;
+	height: auto
+}
+
+.showTitle{
+	width: 100%;
+	text-align:center;
+	font-size: 2em;
+	margin: 0;
+}
+
+@media(max-width: 600px){
+	.sidebar{
+		margin-top: 10%;
+	}
+	.fullPortfolioContent{
+		padding: 4%;
+	}
+}

@@ -1,0 +1,225 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:500;
+}
+.nav .current{
+	text-decoration: overline;
+}
+
+.nav{
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display:flex;
+	justify-content: space-between;
+}
+
+.nav a{
+	text-decoration: none;
+	/*font-family:'Josefin Sans', sans-serif; */
+	color:#2f2d27;
+	text-transform: uppercase;
+	transition: all ease-in-out .5s;
+}
+
+.nav a:hover{
+	color: white;
+}
+
+.nav li {
+	font-size: 1.1em;
+	letter-spacing: .1em;
+	padding: 20px 20px;
+}
+.contentWrapper{
+	position: fixed;
+	top: 14%;
+	right: 6%;
+	background-color: #2f2d27;
+	padding: 2rem 1rem;
+	color: #b9b6b7;
+	height: 80%;
+	width: 40%;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+.titles h1{
+	text-align:center;
+	font-size:4rem;
+	margin: 0;
+	color: #f2f2f2;
+	
+}
+.titles h3{
+	text-align:center;
+	font-size: 2em;
+	margin-top: 1rem;
+	color: #f2f2f2;
+}
+.mobileImage img{
+	max-width: 100%;
+}
+
+.statement{
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	color: #f2f2f2;
+}
+
+
+.home{
+	background:url(images/OliverBG3.jpg) no-repeat center center fixed;
+	background-size:cover;
+}
+
+
+/********************
+CONTACT PAGE
+************************/
+.contactNav a{
+	color: #f2f2f2;
+}
+.contactWrapper{
+	display: flex;
+	width: 100%;
+}
+
+.contactInfo{
+	flex: 1 50%;
+	background-color: #2f2d27;
+	display: flex;
+	flex-direction: column;
+}
+.innerContactInfo{
+	align-self:center;
+}
+
+.contactInfo a{
+	text-decoration: none;
+	color: #f2f2f2;
+	align-self:center;
+}
+.contactInfo h1, .contactInfo h2{
+	color: #f2f2f2;
+	text-align:center; 
+}
+.contactInfo h1{
+	font-size: 5rem;
+	padding-top: 14%;
+}
+.contactInfo h2{
+	font-size: 3rem;
+}
+.contactInfo img{
+		padding-right: 20px;
+	}
+.email, .phone, .map{
+	display: flex;
+	justify-content:space-between;
+	width:60%;
+	margin: 0 auto;
+	padding: 20px;
+}
+.phone{
+	padding-left:22px;
+}
+.contactImage{
+	flex: 1 50%;
+	background:url(images/contactBG.jpg) no-repeat;
+	background-size:cover;
+	height: 100vh;
+}
+
+@media(max-width: 600px){
+	.nav{
+		justify-content: space-around;
+	}
+	.homeNav{
+	background-color: white;
+	margin-top:0;
+}
+	.nav li{
+		padding: 20px 0;
+		font-size: .9em;
+	}
+	.nav a:hover{
+		color:#b9b6b7 ;
+	}
+	.contentWrapper{
+		position:inherit;
+		width: 86%;
+		margin: 16% auto;
+		height: 100%;
+		border-radius: 0;
+		color: #2f2d27;
+		background-color: #f4f4f4;
+		
+	}
+	.titles h1, .titles h3, .statement{
+		color: #2f2d27;
+	}
+	
+	.home{
+	background:none;
+	
+	}
+	/*.contactImage{
+		display: none;
+	} */
+	.contactInfo{
+		/*min-height: 100vh;*/
+		width: 100%;
+	}
+	
+	.contactInfo img{
+		padding-right: 20px;
+	}
+	.contactInfo h1{
+		padding-top: 30%;
+		font-size: 3rem;
+	}
+	.contactInfo h2{
+		font-size: 2rem;
+	}
+	.email, .phone, .map{
+		width: 100%;
+		justify-content:space-between;
+		padding: 30px 5px;
+	}
+}
+
+@media(max-width: 1100px){
+	.contactWrapper{
+		flex-direction: column;
+	}
+	.titles h1{
+		font-size: 3rem;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
