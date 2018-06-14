@@ -65,6 +65,9 @@ h1, h2, h3{
 	margin-top: 1rem;
 	color: #f2f2f2;
 }
+.mobileImage{
+	display:none;
+}
 .mobileImage img{
 	max-width: 100%;
 }
@@ -139,6 +142,19 @@ CONTACT PAGE
 	height: 100vh;
 }
 
+@media(max-width: 1100px){
+	.contactWrapper{
+		flex-direction: column;
+	}
+	.titles h1{
+		font-size: 3rem;
+	}
+	.mobileImage{
+		display: block;
+	}
+	
+}
+
 @media(max-width: 600px){
 	.nav{
 		justify-content: space-around;
@@ -172,11 +188,8 @@ CONTACT PAGE
 	background:none;
 	
 	}
-	/*.contactImage{
-		display: none;
-	} */
+	
 	.contactInfo{
-		/*min-height: 100vh;*/
 		width: 100%;
 	}
 	
@@ -197,15 +210,7 @@ CONTACT PAGE
 	}
 }
 
-@media(max-width: 1100px){
-	.contactWrapper{
-		flex-direction: column;
-	}
-	.titles h1{
-		font-size: 3rem;
-	}
-	
-}
+
 
 
 
