@@ -22,6 +22,12 @@
 	font-size: 2em;
 	margin: 0;
 }
+h3.cementTitle{
+	width:100%;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 @media(max-width: 600px){
 	.sidebar{
