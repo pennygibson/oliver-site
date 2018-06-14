@@ -43,13 +43,18 @@
 }
 .sidebar{
 	width: 100%;
-	margin-top: 6%;
+	margin-top: 50px;
 }
 
 .portfolioItem{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.cementTitle{
+	width:100%;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .medSquare{
@@ -210,7 +215,7 @@ to see shapes more clearly
 
 @media(max-width: 600px){
 	.sidebar{
-		margin-top: 10%;
+		
 	}
 	
 }
