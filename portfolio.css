@@ -41,6 +41,9 @@
 	text-align:center;
 	width: 100%;
 }
+.portfolioPageFooter h4{
+	margin: 0;
+}
 .sidebar{
 	width: 100%;
 	margin-top: 50px;
@@ -55,6 +58,16 @@ h3.cementTitle{
 	width:100%;
 	text-align:center;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.portfolioPage{
+	position: relative;
+	padding: 10px;
+}
+
+.portfolioPage p{
+	color: #b9b6b7;
+	align-self:center;
 }
 
 .medSquare{
@@ -216,6 +229,9 @@ to see shapes more clearly
 @media(max-width: 600px){
 	.sidebar{
 		
+	}
+	footer{
+		background-color:white;
 	}
 	
 }
